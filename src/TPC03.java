@@ -15,6 +15,35 @@ public class TPC03 {
         // 현실세계의 책은 한 권으로 표현되지만 , 프로그래밍에서  책은 책을 이루고 있는 다양한 정보들을 메모리에 저장해야함
         // book 을 이루고 있는 다양한 변수들을 각자 저장해도 되지만 하나로 묶어서 쓰는게 편하다.
         // 따라서, Book 에 해당하는 구조를 설계해야함. 어떤 도구로 ? class 로
+        // 메모리에 실제로 객체를 생성해야 사용 가능
+        b = new Book();  // ()는 생성자/ 우리가 원하는대로 Book이 생성됨 b에는 Book의 번지가 들어감. b 에는 주소값이 저장
+        // 객체로 생성된 실체 : instance b는 객체,인스턴스를 가리키고 있는 인스턴스, 객체 변수 b가 이제 책이 됨
+        // 직접 b로 Book에 접근해서 값 넣어보기
+        b.title = "자바책";
+        b.price = 15000;
+        b.company = "헬로자바";
+        b.page = 700;
+        b.author = "지민";
+        System.out.print(b.title + "\t");
+        System.out.println(b.author);
+        System.out.println(b.page);
+        System.out.println(b.price);
+
+
+        PersonVO p;
+
+        p = new PersonVO();
+
+        p.name = "철수";
+        p.age = 22;
+        p.height = 158f;
+        p.weight = 55.555f ;
+
+
+        System.out.println(p.name);
+        System.out.println(p.age);
+        System.out.println(p.height);
+        System.out.println(p.weight);
 
     }
 }
