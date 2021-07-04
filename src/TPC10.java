@@ -1,4 +1,4 @@
-import kr.tpc.bookDTO;
+import kr.tpc.BookDTO;
 
 public class TPC10 {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class TPC10 {
         a = 10 ;
 
         //책이라는 자료형을 만들자. 클래스로 만들자
-        bookDTO b = new bookDTO(); //new + 생성자 메서드
+        BookDTO b = new BookDTO(); //new + 생성자 메서드
         b.title = " 헬로 자바 ";
         b.price = 17000;
         b.company =  " 지민이네 ";
